@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Thomas Nguyen">
+        <title>My Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="form.js"></script>
+        
+    </head>
+    <body>
+        <nav>
+            <div class="nav_bar">
+                <p class="nav_bar_link">
+                    <a class="link" href="myEvents.html">My Events</a>
+                    <a class="link" href="myWidgets.html">My Widgets</a>
+                    <a class="link" href="MyForm.html">My Form</a>
+                </p>
+            </div>
+        </nav>
+      
+        
+
+        <div class="container">
+            <h2>My Form</h2>
+            <form id="form" onsubmit="return field_check()" method="post" action="http://www-users.cselabs.umn.edu/~liux4189/echo.php">
+                <label>
+                    Event
+                    <br>
+                    <p class="user_notes">Accepted: number: 0-9, lower case characters: a-z, upper-case characters: A-Z and spaces.</p>
+                </label>
+                <input type="text" id="event" name="event" placeholder="Your event...">
+
+                <label>Day of Week</label>
+                <select id="day" name="day">
+                    <option value=""> </option>
+                    <option value="Sunday">Sunday</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+
+                <label>Start</label>
+                <input type="text" id="start" name="start">
+
+                <label>End</label>
+                <input type="text" id="end" name="end">
+
+                <label>Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Your event's phone number...">
+
+                <label>Location</label>
+                <input type="text" id="location" name="location" placeholder="Location of event...">
+
+                <label>Extra Info</label>
+                <input type="text" id="info" name="info" placeholder="Extra info on event...">
+
+                <label>URL</label>
+                <input id="URL" name="url" placeholder="URL of event..."></input>
+
+                <input class="subclear" type="submit" id = "submit_but" value="Submit">
+                <input class="subclear" type="reset" id="clear_but" value="Clear" onclick="clear()">
+            </form>
+        </div>
+    
+    </body>
+    
+</html>

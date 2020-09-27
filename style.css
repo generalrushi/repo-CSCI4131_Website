@@ -1,0 +1,66 @@
+table, th, tr {
+    border: 1px solid black;
+    border-collapse:collapse;
+    text-align: left;
+}
+
+.nav_bar {
+    border-style: solid;
+    border-color: white;
+    background-color: darkblue;
+    color: #f2f2f2;
+    padding: 1px;
+    font-size: 27px;
+    
+    
+}
+
+.nav_bar_link {
+    margin: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    margin-left: 45px;
+}
+
+body {
+    font-family: Georgia;
+    background-color: lightblue;
+    
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 26px;
+  }
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.subclear {
+    width: 15%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.user_notes {
+    font-size: 11px;
+}

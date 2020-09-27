@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Home Screen">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      	<script src="Form.js"></script>
+        <link rel="stylesheet" type="text/css" href="Form.css"/>
+    </head>
+    <body>
+        <div class="Tabs">
+            <nav>
+                <a href = "./FrontEnd.html">Back To Home</a>
+                <a href = "./stories.html">Lost Animal Stories</a>
+                <a href = "./donations.html">Donate</a>
+            </nav>
+        </div>
+        <h3 style="margin-left: 20px">Contact Form</h3>
+
+        <div class="container">
+        <form id="animalForm">
+            <label for="fname">Owner's First Name</label>
+            <input type="text" id="oFName" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Owner's Last Name</label>
+            <input type="text" id="oLName" name="lastname" placeholder="Your last name..">
+
+            <label for="contactNumber">Owner's Contact Number</label>
+            <input type="text" id="oCNumber" name="ownerContactNumber" placeholder="Your Phone Number..">
+
+            <label for="pname">Pet Name</label>
+            <input type="text" id="pname" name="petname" placeholder="Your pet's name..">
+
+            <label for="animalType">Animal Type</label>
+            <select id="animalType" name="animalType">
+            <option value="default"></option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="horse">Horse</option>
+            <option value="cow">Cow</option>
+            <option value="fish">Fish</option>
+            <option value="snake">Snake</option>
+            <option value="monkey">Monkey</option>
+            </select>
+
+            <label for="dLost">Date Lost</label>
+            <input type="text" id="dLost" name="dLost" placeholder="The day you lost your pet..">
+
+            <label for="latitude">Latitude</label>
+            <input type="text" id="lat" name="latitude" placeholder="Latitude coordinate you lost your pet..">
+
+            <label for="longitude">Longitude</label>
+            <input type="text" id="long" name="longitude" placeholder="Longitude coordinate you lost your pet..">
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" id = "submit_but" value="Submit">
+        </form>
+        </div>
+    </body>
+    <div id="snackbar">Successfully Submitted</div>
+</html>
