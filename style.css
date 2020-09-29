@@ -1,9 +1,54 @@
+body {
+    font-family: Georgia;
+    background-color: lightblue;
+    
+}
+
+/*     myEvents      */
+.event_container {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.table_container {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.table_element_0 {
+    background-color: beige;
+}
+
+.table_element_1 {
+    background-color: white;
+}
+
+.image_container {
+    margin-left: 50%;
+    height: 100%;
+}
+
+#tiny_img {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#enlarged_img {
+    width: 300px;
+    height: 300px;
+}
+
+
 table, th, tr {
     border: 1px solid black;
     border-collapse:collapse;
     text-align: left;
 }
 
+/*     NAV BAR          */
 .nav_bar {
     border-style: solid;
     border-color: white;
@@ -11,8 +56,6 @@ table, th, tr {
     color: #f2f2f2;
     padding: 1px;
     font-size: 27px;
-    
-    
 }
 
 .nav_bar_link {
@@ -26,18 +69,37 @@ table, th, tr {
     margin-left: 45px;
 }
 
-body {
-    font-family: Georgia;
-    background-color: lightblue;
-    
-}
-
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
     margin-top: 26px;
-  }
+}
+
+/*             myWidgets               */
+.grid_container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Trying to figure out how I can properly align my grid...
+   Twitter link does not have the scrollbar and can't be smaller...
+*/
+#item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 
 input, select {
     width: 100%;
