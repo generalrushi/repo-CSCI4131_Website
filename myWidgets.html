@@ -6,6 +6,7 @@
         <title>My Widgets</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script src="myWidgets.js"></script>
     </head>
     <body>
         <nav>
@@ -20,14 +21,14 @@
 
         <h1>My Widgets List</h1>
         <div class="grid-container">
-            <div class="grid-item">
+            <div id="item0">
                 <div>
                     <iframe width="500" height="350"
                     src="https://www.youtube.com/embed/videoseries?list=PL-EM9oUP8FOyggWUw_xqErqvrqR2Qfdko"
                     style="border:0;" allow="utoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="grid-item" id="item1">
+            <div id="item1">
                 <a class="twitter-timeline" 
                 href="https://twitter.com/SneakerNews?ref_src=twsrc%5Etfw"
                 data-width="400"
@@ -37,7 +38,7 @@
                     Tweets by SneakerNews
                 </a> 
             </div>
-            <div class="grid-item">
+            <div id="item2">
                 <blockquote class="instagram-media" 
                 data-instgrm-permalink="https://www.instagram.com/p/CFmgs8OnT_d/?utm_source=ig_embed&amp;utm_campaign=loading" 
                 data-instgrm-version="12" 
@@ -98,18 +99,21 @@
                 </a>
                 <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CFmgs8OnT_d/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Secrets2Success (@secrets2success)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2020-09-26T13:39:20+00:00">Sep 26, 2020 at 6:39am PDT</time></p></div></blockquote> <script async src="https://www.instagram.com/embed.js"></script>
             </div>
-            <div class="grid-item">
+            <div id="item3">
                 <div id="container">
                     <div id="header">
                         <h2>Password Strength Checking without jQuery</h2>
                         <hr>
                     </div>
                     <div id="content">
-                        <form id="register">
+                        <form id="register" >
                             <label for="password"><b>Password : </b></label>
-                            <input name="password" id="password" type="password" placeholder="Type Your Password here"/>&nbsp;&nbsp;
+                            <input name="password" id="password" type="password" placeholder="Type Your Password here"/>
                             <span id="result"></span>
                         </form>
+                        <div id="progressBarContainer">
+                            <div id="progressBar"></div>
+                        </div>
                     </div>
                 </div>
             </div>

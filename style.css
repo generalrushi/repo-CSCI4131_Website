@@ -34,8 +34,8 @@ body {
 
 
 tr:hover .tiny_img {
-    height: 150px;
-    width: 200px;
+    height: 100px;
+    width: 150px;
     text-align: center;
     visibility: visible;
 }
@@ -51,7 +51,14 @@ tr:hover .tiny_img {
 #enlarged_img {
     width: 300px;
     height: 300px;
-    margin-left: 10%
+}
+
+.centerIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 50%;
 }
 
 table, th, tr {
@@ -89,29 +96,33 @@ table, th, tr {
 }
 
 /*             myWidgets               */
+
+#item0 {
+    grid-area: c1r1;
+}
+
+#item1 {
+    grid-area: c1r2;
+}
+
+#item2 {
+    grid-area: c2r1;
+}
+
+#item3 {
+    grid-area: c2r2;
+}
+
 .grid_container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    width: 100%;
     background-color: #2196F3;
-    padding: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "c1r1 c1r2"
+    "c2r1 c2r2";
 }
-
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-}
-
-/* Trying to figure out how I can properly align my grid...
-   Twitter link does not have the scrollbar and can't be smaller...
-*/
-#item1 {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-
 
 input, select {
     width: 100%;
@@ -191,4 +202,15 @@ h2{
     font-weight:bold;
     color: limegreen;
     font-size:larger;
+}
+
+#progressBarContainer {
+    width: 100%;
+    background-color: grey;
+}
+
+#progressBar {
+    width: 0%;
+    height: 30px;
+    background-color: green;
 }
