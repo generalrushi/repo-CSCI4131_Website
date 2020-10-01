@@ -97,32 +97,42 @@ table, th, tr {
 
 /*             myWidgets               */
 
-#item0 {
-    grid-area: c1r1;
+#youtubeIFRAME {
+    border: 0;
 }
 
 #item1 {
-    grid-area: c1r2;
+    grid-column-start: 1;
 }
 
 #item2 {
-    grid-area: c2r1;
+    grid-column-start: 2;
 }
 
 #item3 {
-    grid-area: c2r2;
+    grid-column-start: 1;
 }
 
+#item4 {
+    grid-column-start: 2;
+}
+
+/*
 .grid_container {
     display: grid;
-    width: 100%;
     background-color: #2196F3;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "c1r1 c1r2"
-    "c2r1 c2r2";
+    padding: 10px;
+}*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color:  rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    grid-gap: 10px;
 }
+
 
 input, select {
     width: 100%;
