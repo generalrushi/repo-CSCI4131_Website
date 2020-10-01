@@ -34,7 +34,8 @@ function field_check()
     }
 
     // checks for www. and .com or .net or .gov
-    if ( !(url.includes("www.") && (url.includes(".com")
+    if ( !((url.includes("https://www.") || url.includes("http://www.") 
+    || url.includes("www.")) && (url.includes(".com")
     || url.includes(".net") || url.includes(".gov"))))
     {
         window.alert("Format url syntatically correctly.");
