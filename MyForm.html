@@ -24,9 +24,9 @@
             <form id="form" onsubmit="return field_check()" method="post" action="http://www-users.cselabs.umn.edu/~liux4189/echo.php">
                 <label>
                     Event
-                    <br>
-                    <p class="user_notes">Accepted: number: 0-9, lower case characters: a-z, upper-case characters: A-Z and spaces.</p>
                 </label>
+                <br>
+                <p class="user_notes">Accepted: number: 0-9, lower case characters: a-z, upper-case characters: A-Z and spaces.</p>
                 <input type="text" id="event" name="event" placeholder="Your event..." pattern="^[a-zA-Z0-9\s]+$">
 
                 <label>Day of Week</label>
@@ -42,23 +42,23 @@
 
                 <label>
                     Start
-                    <br>
-                    <p class="user_notes">Accepted: Military time xx:xx AM/PM</p>
                 </label>
+                <br>
+                <p class="user_notes">Accepted: Military time xx:xx AM/PM</p>
                 <input type="text" id="start" name="start" pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9] [A-Z]{2}$">
 
                 <label>
                     End
-                    <br>
-                    <p class="user_notes">Accepted: Military time xx:xx AM/PM</p>
                 </label>
+                <br>
+                <p class="user_notes">Accepted: Military time xx:xx AM/PM</p>
                 <input type="text" id="end" name="end" pattern="^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9] [A-Z]{2}$">
 
                 <label>
                     Phone
-                    <br>
-                    <p class="user_notes">Accepted: first number must be between 1-9, number: 0-9, dashes... xxx-xxx-xxxx</p>
                 </label>
+                <br>
+                <p class="user_notes">Accepted: first number must be between 1-9, number: 0-9, dashes... xxx-xxx-xxxx</p>
                 <input type="text" id="phone" name="phone" placeholder="Your event's phone number..." pattern="^[1-9][0-9]{2}-[0-9]{3}-[0-9]{4}$">
 
                 <label>Location</label>
@@ -68,13 +68,11 @@
                 <input type="text" id="info" name="info" placeholder="Extra info on event...">
 
                 <label>URL</label>
-                <input id="URL" name="url" placeholder="URL of event..."></input>
+                <input id="URL" name="url" placeholder="URL of event...">
 
                 <input class="subclear" type="submit" id = "submit_but" value="Submit">
                 <input class="subclear" type="reset" id="clear_but" value="Clear" onclick="clear()">
             </form>
         </div>
-    
     </body>
-    
 </html>
